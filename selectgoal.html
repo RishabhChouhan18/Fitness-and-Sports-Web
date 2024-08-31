@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Fitness Goal</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .goal-container {
+            background-color: #fff;
+            padding: 40px 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        .goal-container h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .goal-container p {
+            font-size: 1rem;
+            margin-bottom: 20px;
+            color: #7f8c8d;
+        }
+
+        .goal-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .goal-container select {
+            width: 100%;
+            padding: 12px 15px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            background-color: #f5f5f5;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .goal-container input[type="submit"] {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #27ae60;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .goal-container input[type="submit"]:hover {
+            background-color: #2ecc71;
+        }
+
+        @media (max-width: 500px) {
+            .goal-container {
+                padding: 20px 15px;
+            }
+
+            .goal-container h1 {
+                font-size: 1.8rem;
+            }
+
+            .goal-container input[type="submit"] {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="goal-container">
+        <h1>Select Your Fitness Goal</h1>
+        <p>Choose a goal that best describes what you want to achieve.</p>
+        <form>
+            <select required>
+                <option value="" disabled selected>Select your goal</option>
+                <option value="weight-loss">Weight Loss</option>
+                <option value="muscle-gain">Weight Gain</option>
+                <option value="endurance">Increase Endurance</option>
+                <option value="flexibility">Improve Flexibility</option>
+                <option value="general-fitness">General Fitness</option>
+            </select>
+            <a href ="file:///C:/Users/risha/Desktop/MyProject/Your%20Need.html">Submit</a>
+            <!-- <input type="submit" value="Submit"> -->
+            
+        </form>
+    </div>
+
+</body>
+</html>
